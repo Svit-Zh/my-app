@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Weather from "./Weather";
+
+import "./App.css";
 
 function App() {
+  let [city, setCity] = useState("Paris");
+  let [search, setSearch] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    setCity(search);
+  }
+
+  function updateSearch(event) {
+    setSearch(event.target.value);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <div className="weather-container">
+        <h1>Weather App</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Enter a city"
+            onChange={updateSearch}
+          />
+          <input type="submit" value="Search" />
+        </form>
+        <Weather city={city} />
+      </div>
+      <div class="github">
+        <a href="" target="_blank" rel="noreferrer">
+          Open source code
         </a>
-      </header>
+        by Svitlana Zhyhulina
+      </div>
     </div>
   );
 }
