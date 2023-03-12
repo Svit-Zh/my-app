@@ -31,7 +31,11 @@ function App() {
         <Weather city={city} />
       </div>
       <div class="github">
-        <a href="" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/Svit-Zh/my-app"
+          target="_blank"
+          rel="noreferrer"
+        >
           Open source code
         </a>
         by Svitlana Zhyhulina
