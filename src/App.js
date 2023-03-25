@@ -1,47 +1,33 @@
-import React, { useState } from "react";
-import Weather from "./Weather";
-
 import "./App.css";
+import "./weather.css";
+import Search from "./Search";
 
-function App() {
-  let [city, setCity] = useState("Paris");
-  let [search, setSearch] = useState("");
-
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    setCity(search);
-  }
-
-  function updateSearch(event) {
-    setSearch(event.target.value);
-  }
+export default function App() {
   return (
-    <div className="App">
-      <div className="weather-container">
-        <h1>Weather App</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            placeholder="Enter a city"
-            onChange={updateSearch}
-          />
-          <input type="submit" value="Search" />
-        </form>
-        <Weather city={city} />
-      </div>
-      <div class="github">
-        <a
-          href="https://github.com/Svit-Zh/my-app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open source code
-        </a>
-        by Svitlana Zhyhulina
-      </div>
+    <div className="App container">
+      <Search />
+      <footer className="App-footer">
+        <p>
+          This application was coded by{" "}
+          <a
+            href="https://katarina-farkas.netlify.app/"
+            target="blank"
+            rel="no-referrer"
+          >
+            Katarina Farkas
+          </a>{" "}
+          using ReactJS{" "}
+          <img src="./logo192.png" alt="React logo" class="App-logo" /> and is{" "}
+          <a
+            href="https://github.com/Katarina-411/react-weather-app.git"
+            target="blank"
+            rel="no-referrer"
+          >
+            open-sourced
+          </a>{" "}
+          on GitHub
+        </p>
+      </footer>
     </div>
   );
 }
-
-export default App;

@@ -1,68 +1,73 @@
-.Weather {
-  box-sizing: border-box;
+.btn-secondary {
+  background-color: #076470 !important;
+  border-radius: 10px;
 }
 
-.Weather ul {
-  display: inline-block;
-  text-align: left;
+body {
+  font-family: "Urbanist", sans-serif;
+  color: #222222;
 }
-
-.Weather div {
-  display: block;
+.weather h1 {
+  font-size: 32px;
+  line-height: 30px;
+  margin: 20px 0 5px;
 }
-.float-left {
-  float: left !important;
+.weather p {
+  font-size: 18px;
 }
-
-.Weather .row {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.weather-container {
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
-  margin: 20px 0;
-  max-width: 630px;
-  padding: 20px 16px 24px;
-}
-.weather-summary {
-  padding: 20px 0;
-}
-.weather-summary-header {
-  padding-bottom: 20px;
-}
-.Weather .weather-icon {
-  margin-top: 5px;
-}
-.Weather h1 {
-  display: block;
-  color: #878787;
-  font-size: 24px;
-  font-weight: 100;
+.weather ul {
   margin: 0;
-  line-height: 28px;
+  padding: 0;
 }
-
-.Weather .weather-detail__text {
-  color: #878787;
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 20px;
-}
-
-.weather-temp--today {
-  color: #333;
-  float: left;
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 1;
-  padding-left: 10px;
-}
-.weather-unit__text--today {
-  color: #333;
-  float: left;
-  font-size: 16px;
+.weather li {
+  list-style: none;
+  font-size: 18px;
   line-height: 1.5;
 }
+.weather canvas {
+  margin-top: 8px;
+}
+.weather-current {
+  margin-top: 20px;
+}
+.current-max {
+  font-weight: 600;
+}
+
+.temperature-today {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.temperature-today-unit {
+  position: relative;
+  top: -30px;
+}
+.temperature-today-unit a {
+  text-decoration: none;
+  color: #076470;
+}
+.weather-additional p {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
+}
+.weather-additional {
+  border-radius: 20px;
+  border: 1px solid #076470;
+  margin: 0 10px;
+  padding: 10px 0;
+}
+
+.App-footer p {
+  font-size: 12px;
+  margin: 0;
+}
+.App-footer a {
+  font-size: 12px;
+  color: #076470;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: 600;
+  color: #076470 !important;
