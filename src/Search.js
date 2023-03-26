@@ -52,6 +52,7 @@ export default function Search() {
             type="search"
             placeholder="Enter a city"
             onChange={enterCity}
+            autucomplete="off"
             className="form-control"
           />
         </div>
