@@ -9,17 +9,13 @@ export default function App() {
       <footer className="App-footer">
         <p>
           This application was coded by{" "}
-          <a
-            href="https://katarina-farkas.netlify.app/"
-            target="blank"
-            rel="no-referrer"
-          >
-            Katarina Farkas
+          <a href="" target="blank" rel="no-referrer">
+            Svitlana Zhyhulina
           </a>{" "}
           using ReactJS{" "}
           <img src="./logo192.png" alt="React logo" class="App-logo" /> and is{" "}
           <a
-            href="https://github.com/Katarina-411/react-weather-app.git"
+            href="https://github.com/Svit-Zh/my-app"
             target="blank"
             rel="no-referrer"
           >
