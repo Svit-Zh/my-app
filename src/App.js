@@ -1,5 +1,5 @@
 import "./App.css";
-import "./weather.css";
+import "./Weather.css";
 import Search from "./Search";
 
 export default function App() {
