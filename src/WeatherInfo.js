@@ -4,7 +4,7 @@ import WeatherIcon from "./WeatherIcon";
 import WindDirection from "./WindDirection";
 import WeatherTemperature from "./WeatherTemperature";
 import SunriseSunset from "./SunriseSunset";
-import "./weather.css";
+import "./Weather.css";
 
 export default function WeatherInfo(props) {
   return (
