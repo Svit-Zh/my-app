@@ -9,7 +9,11 @@ export default function App() {
       <footer className="App-footer">
         <p>
           This application was coded by{" "}
-          <a href="" target="blank" rel="no-referrer">
+          <a
+            href="https://coding-portfolio-svitlana-zhyhulina.netlify.app/"
+            target="blank"
+            rel="no-referrer"
+          >
             Svitlana Zhyhulina
           </a>{" "}
           using ReactJS{" "}
